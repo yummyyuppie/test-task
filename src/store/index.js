@@ -1,11 +1,10 @@
 import Vue from "vue";
 import Vuex from "vuex";
-
+import { packages } from "@/store/packages";
 Vue.use(Vuex);
 
-export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {},
-});
+export const store = new Vuex.Store({
+  modules: {
+    packages
+  }
+})
